@@ -1,0 +1,10 @@
+body {
+  background-color: #191a19;
+  font-family: "Poppins";
+}
+
+header {
+  background-image: url("./asset/bgheader.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
