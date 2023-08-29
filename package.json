@@ -1,0 +1,17 @@
+{
+  "name": "kourse-hero",
+  "version": "1.0.0",
+  "description": "Belajar slicing desain menggunakan Bootstrap dan Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass ./scss/style.scss ./dist/style.css",
+    "compile-watch": "sass --watch ./scss/style.scss ./dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}
