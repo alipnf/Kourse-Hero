@@ -1,0 +1,25 @@
+@use "../main" as *;
+nav {
+  .menu {
+    margin-left: 30%;
+  }
+  .nav-link,
+  .btn-signup {
+    @include text-nav(1rem, 0.8);
+  }
+  .navbar-brand {
+    @include text-nav(1.25rem);
+  }
+
+  .btn-signup {
+    @include signup;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav {
+    .menu {
+      margin-left: 0;
+    }
+  }
+}
