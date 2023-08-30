@@ -37,7 +37,7 @@ body {
   }
 }
 
-@mixin text-main($size, $line-height, $color) {
+@mixin text-header($size, $line-height, $color) {
   color: $color;
   font-family: Poppins;
   font-size: $size;
@@ -46,7 +46,7 @@ body {
   line-height: $line-height;
 }
 
-@mixin btn-main {
+@mixin btn-header {
   color: #fff;
   font-family: Poppins;
   font-size: 16px;
@@ -63,7 +63,7 @@ body {
   }
 }
 
-@mixin link-main {
+@mixin link-header {
   color: #ff5c00;
   font-family: Poppins;
   font-size: 16px;

@@ -1,23 +1,23 @@
 @use "../custom" as *;
-main {
+header {
   margin-top: 100px;
   .title {
     margin-top: 50px;
     h1 {
-      @include text-main(2.5rem, normal, white);
+      @include text-header(2.5rem, normal, white);
     }
     p {
       margin-top: 15px;
-      @include text-main(1rem, 32px, rgba(255, 255, 255, 0.6));
+      @include text-header(1rem, 32px, rgba(255, 255, 255, 0.6));
     }
 
     .link {
       margin-top: 48px;
-      .btn-main {
-        @include btn-main;
+      .btn-header {
+        @include btn-header;
       }
-      .link-main {
-        @include link-main;
+      .link-header {
+        @include link-header;
       }
     }
   }
@@ -30,7 +30,7 @@ main {
 }
 
 @media (max-width: 1178px) {
-  main {
+  header {
     .row {
       display: grid;
       grid-template-columns: 1fr;
@@ -46,10 +46,10 @@ main {
 }
 
 @media (min-width: 1400px) {
-  main {
+  header {
     .title {
       h1 {
-        @include text-main(3rem, normal, white);
+        @include text-header(3rem, normal, white);
       }
     }
   }
