@@ -45,11 +45,67 @@ header {
   }
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 991px) and (min-width: 768px) {
   header {
+    margin-top: 75px;
     .title {
       h1 {
-        @include text-header(3rem, normal, white);
+        font-size: 2rem;
+      }
+      p,
+      .link .link-header {
+        font-size: 0.8rem;
+        line-height: 28px;
+      }
+      .link {
+        .btn-header {
+          padding: 8px 14px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    margin-top: 50px;
+    .title {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p,
+      .link .link-header {
+        font-size: 0.7rem;
+        line-height: 28px;
+      }
+      .link {
+        .btn-header {
+          padding: 6px 10px;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    margin-top: 25px;
+    .title {
+      h1 {
+        font-size: 1.25rem;
+      }
+      p,
+      .link .link-header {
+        font-size: 0.6rem;
+        line-height: 20px;
+      }
+    }
+    .link {
+      .btn-header {
+        padding: 4px 7px;
+        font-size: 0.6rem;
       }
     }
   }
