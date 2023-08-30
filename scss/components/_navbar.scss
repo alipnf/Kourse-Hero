@@ -1,5 +1,6 @@
 @use "../custom" as *;
 nav {
+  margin-top: 64px;
   .menu {
     margin-left: 30%;
   }
@@ -24,6 +25,45 @@ nav {
     }
     .btn-signup {
       margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  nav {
+    margin-top: 48px;
+    .nav-link,
+    .btn-signup {
+      font-size: 0.8rem;
+    }
+    .navbar-brand {
+      font-size: 1.23rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    margin-top: 32px;
+    .nav-link,
+    .btn-signup {
+      font-size: 0.7rem;
+    }
+    .navbar-brand {
+      font-size: 1.22rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    margin-top: 16px;
+    .nav-link,
+    .btn-signup {
+      font-size: 0.6rem;
+    }
+    .navbar-brand {
+      font-size: 1.21rem;
     }
   }
 }
