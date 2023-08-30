@@ -1,0 +1,18 @@
+@use "../custom" as *;
+main {
+  margin-top: 80px;
+  .main-card {
+    img {
+      height: 50px;
+      margin-right: 25px;
+    }
+    .text-main-card {
+      h1 {
+        @include text-main(1.125rem, 600, white);
+      }
+      p {
+        @include text-main(1rem, 400, rgba(255, 255, 255, 0.6));
+      }
+    }
+  }
+}

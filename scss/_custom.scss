@@ -4,8 +4,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, #192653 0%, #131d41 100%);
   background-attachment: fixed;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 9%;
+  padding-right: 9%;
   nav {
     font-family: "Source Sans 3", sans-serif;
   }
@@ -39,7 +39,6 @@ body {
 
 @mixin text-header($size, $line-height, $color) {
   color: $color;
-  font-family: Poppins;
   font-size: $size;
   font-style: normal;
   font-weight: 400;
@@ -48,7 +47,6 @@ body {
 
 @mixin btn-header {
   color: #fff;
-  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -65,7 +63,6 @@ body {
 
 @mixin link-header {
   color: #ff5c00;
-  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -74,4 +71,12 @@ body {
   &:hover {
     opacity: 0.8;
   }
+}
+
+@mixin text-main($size, $font-weight, $color) {
+  color: $color;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $font-weight;
+  line-height: 30px;
 }
