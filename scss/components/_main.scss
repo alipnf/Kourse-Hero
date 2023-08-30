@@ -1,6 +1,6 @@
 @use "../custom" as *;
 main {
-  margin-top: 80px;
+  margin-top: 50px;
   .main-card {
     img {
       height: 50px;
@@ -12,6 +12,72 @@ main {
       }
       p {
         @include text-main(1rem, 400, rgba(255, 255, 255, 0.6));
+      }
+    }
+  }
+}
+
+@media (max-width: 1178px) {
+  main {
+    .row {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  main {
+    margin-top: 45px;
+    .main-card {
+      img {
+        height: 45px;
+      }
+      .text-main-card {
+        h1 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    margin-top: 20px;
+    .main-card {
+      img {
+        height: 40px;
+      }
+      .text-main-card {
+        h1 {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    margin-top: 25px;
+    .main-card {
+      img {
+        height: 30px;
+      }
+      .text-main-card {
+        h1 {
+          font-size: 0.7rem;
+        }
+        p {
+          font-size: 0.6rem;
+        }
       }
     }
   }
