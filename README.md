@@ -1,4 +1,4 @@
-# Dressly-Landing-Page
+# Kourse Hero
 
 Belajar slicing desain menggunakan Bootstrap dan Sass
 <br>
